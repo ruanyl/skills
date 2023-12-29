@@ -70,9 +70,6 @@ fi
 mkdir -p $OUTPUT/maven/org/opensearch
 cp -r ./build/local-staging-repo/org/opensearch/. $OUTPUT/maven/org/opensearch
 
-pwd
-ls -l
-
 mkdir -p $OUTPUT/plugins
 zipPath=$(find . -path \*build/distributions/*.zip)
 distributions="$(dirname "${zipPath}")"
